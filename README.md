@@ -41,6 +41,19 @@ If you want to contribute or have ideas for this project, just fork the repo and
 
 7-Open and Create a PR
 
+# Project Screenshorts
+## Main Body:-
+![Screenshot (133)](https://github.com/AVINASHMAITY/CryptoCurrency-dashboard/assets/95832605/a04722c0-185c-40bb-9799-cb0460c244a6)
+## Searchbar:-
+![Searchbar Screenshot](https://github.com/AVINASHMAITY/CryptoCurrency-dashboard/assets/95832605/66df9c19-c0d4-4f94-9b2a-1b42b99d01af)
+## Charts:-
+![chart screenshort](https://github.com/AVINASHMAITY/CryptoCurrency-dashboard/assets/95832605/17a25523-606e-49f8-97d2-de301ebbf64b)
+## Profile and Exchange:-
+![portfolio and exchange coins screenshort](https://github.com/AVINASHMAITY/CryptoCurrency-dashboard/assets/95832605/85608faf-12b1-4fa7-891e-2e35cf8f2073)
+## Sidebar:-
+![sidebar screenshort](https://github.com/AVINASHMAITY/CryptoCurrency-dashboard/assets/95832605/9e190696-9c12-4097-8cd2-73a77a6c4f04)
+
+
 # Features
 1-User can select the type of currency like inr,usd and eur.
 
