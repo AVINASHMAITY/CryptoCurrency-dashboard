@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Project Name
+Almabetter cryptocurrency dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 About This Project:-
+Cryptocurrency dashboard is an application that uses the coinGecko API and displays the data and charts.This was a capstone project built during AlmaBetter training.
 
-## Available Scripts
+## Library used in this project:-
+1-react js
 
-In the project directory, you can run:
+2-react redux/redux toolkit
 
-### `npm start`
+3-redux thunk
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4-chart js
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+5-react chart js2
 
-### `npm test`
+6-axios
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+7-tailwind css
 
-### `npm run build`
+## API used in this project:-
+coingecko API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# How to Contribute
+Contributions are more than welcome!
+If you want to contribute or have ideas for this project, just fork the repo and create a PR. If you spot a bug, you are more than welcome to open an issue! Do ⭐ this project!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contribution Guidelines:-
+1-Fork the Project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2-Creata a branch for your feature/ idea. Please do give a good
 
-### `npm run eject`
+3-name for the branch that tells about the feature.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4-Stage your changes
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5-Commit your changes
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+6-Push the changes to your remote branch
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+7-Open and Create a PR
 
-## Learn More
+# Features
+1-User can select the type of currency like inr,usd and eur.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2-User can search types of cryptocurrencies.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3-User can view past and current prices of crypto by clicking of days buttons.
 
-### Code Splitting
+4-User can select type of charts.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5-User can view data visuals through dynamic graphs
 
-### Analyzing the Bundle Size
+6-sidebar indicate the market cap and profit/loss of the 
+cryptocurrencies in the past 24 hours.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+7-User can Exchange different cryptocurrenices.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+8-User can also visit the website in any device as the website is Resposive and User-friendly.

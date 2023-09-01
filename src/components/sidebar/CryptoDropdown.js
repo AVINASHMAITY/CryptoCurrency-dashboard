@@ -11,14 +11,14 @@ const CryptoDropdown = () => {
   const coin = useSelector((state) => state.coinReducer.currencies);
   const symbol = useSelector((state) => state.symbolReducer.symbol);
   const id = useSelector((state) => state.currencyReducer.setCurrency);
-  const loading = useSelector(state=> state.coinReducer.loading)
+  const loading = useSelector((state) => state.coinReducer.loading);
   const dispatch = useDispatch();
 
   //console.log(coin);
 
   useEffect(() => {
     dispatch(fetchData(id));
-  }, [dispatch,id]);
+  }, [dispatch, id]);
 
   //this function returns compact value
   const numbersFormatter = (number) => {
@@ -46,42 +46,46 @@ const CryptoDropdown = () => {
   }
 
   return (
-    <div className='bg-white rounded-lg shadow-md p-2'>
-      <p className='font-bold'>Cryptocurrency by market cap</p>
+    <div className="bg-white rounded-lg shadow-md p-2">
+      <p className="font-bold">Cryptocurrency by market cap</p>
       <div>
         {
           // maps coin data
           coin.map((item) => {
-            return <div className='flex justify-between pt-1'>
-              <div className='flex flex-col justify-center gap-1'>
-                <div className='flex items-center gap-1'>
-                  <img src={item.image} alt={""} width="26px" />
-                  <p className='font-semibold'>{item.name}</p>
+            return (
+              <div className="flex justify-between p-1">
+                <div className="flex flex-col justify-center gap-1">
+                  <div className="flex items-center gap-1">
+                    <img src={item.image} alt={""} width="26px" />
+                    <p className="font-semibold">{item.name}</p>
+                  </div>
+                  <div className="flex gap-1 text-xs ">
+                    <span className="font-semibold">Mkt.Cap:</span>
+                    <span>{symbol}</span>
+                    <p>{numbersFormatter(item.market_cap)}</p>
+                  </div>
                 </div>
-                <div className='flex gap-1 text-xs '>
-                  <span className='font-semibold'>Mkt.Cap:</span>
-                  <span>{symbol}</span>
-                  <p>{numbersFormatter(item.market_cap)}</p>
-                </div>
-              </div>
-              <div className=''>
-                <div>
-                  {
-                    item.price_change_percentage_24h > 0 ?
-                      <div className='flex justify-center items-center gap-1'>
-                        <img src={upicon} alt='up' width="35px" />
-                        <span className='text-lime-400 text-xs font-semibold'>{`${item.price_change_percentage_24h.toFixed(3)}%`}
-                        </span>
-                      </div> :
-                      <div className='flex justify-center items-center gap-1'>
-                        <img src={downicon} alt='down' width="35px" />
-                        <span className='text-red-400 text-xs font-semibold'>{`${item.price_change_percentage_24h.toFixed(3)}%`}
+                <div className="">
+                  <div>
+                    {item.price_change_percentage_24h > 0 ? (
+                      <div className="flex justify-center items-center gap-1">
+                        <img src={upicon} alt="up" width="35px" />
+                        <span className="text-lime-400 text-xs font-semibold">
+                          {`${item.price_change_percentage_24h.toFixed(3)}%`}
                         </span>
                       </div>
-                  }
+                    ) : (
+                      <div className="flex justify-center items-center gap-1">
+                        <img src={downicon} alt="down" width="35px" />
+                        <span className="text-red-400 text-xs font-semibold">
+                          {`${item.price_change_percentage_24h.toFixed(3)}%`}
+                        </span>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
-            </div>
+            );
           })
         }
       </div>

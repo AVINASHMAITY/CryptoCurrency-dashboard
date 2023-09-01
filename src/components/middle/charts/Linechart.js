@@ -34,7 +34,7 @@ const Linechart = () => {
   const symbol = useSelector((state) => state.symbolReducer.symbol);
   const day = useSelector((state) => state.dayReducer.days);
   const loading = useSelector((state) => state.chartReducer.loading);
-  
+
   // Dispatch the action to fetch chart data
   useEffect(() => {
     dispatch(
@@ -44,7 +44,7 @@ const Linechart = () => {
         day: day,
       })
     );
-  }, [dispatch,day, coin, currency]);
+  }, [dispatch, day, coin, currency]);
 
   const LineChartData = chartData.map((value) => ({
     x: value[0],

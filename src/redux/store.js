@@ -8,12 +8,12 @@ import symbolSlice from "./slice/symbolSlice";
 
 //we can store all data
 export default configureStore({
-    reducer:{
-        currencyReducer:currencySlice,
-        coinReducer:coinSlice,
-        chartReducer:chartSlice,
-        dayReducer:daySlice,
-        selectCoinReducer: selectedCoinSlice,
-        symbolReducer: symbolSlice
-    }
-})
+  reducer: {
+    currencyReducer: currencySlice,
+    coinReducer: coinSlice,
+    chartReducer: chartSlice,
+    dayReducer: daySlice,
+    selectCoinReducer: selectedCoinSlice,
+    symbolReducer: symbolSlice,
+  },
+});
